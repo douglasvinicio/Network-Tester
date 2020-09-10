@@ -1,0 +1,13 @@
+{% extends "NetworkTesterApp/layout.html"%}
+
+{% block body %}
+
+<h1>Network Tester App</h1>
+
+<p>The IP entered is : {{ takeIdInput }}</p>
+<p>The Ports opened are : {{ port }}</p>
+<p>The time taken to make this test : {{ timeTaken }}</p>
+
+<a href="{% url 'index' %}">Home</a>
+
+{% endblock %}

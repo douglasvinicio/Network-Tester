@@ -1,0 +1,13 @@
+{% extends "NetworkTesterApp/layout.html"%}
+
+{% block body %}
+
+<h1>Network Tester App</h1>
+<section class="form">
+    <form action="{% url 'test' %}" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit">
+    </form>
+</section>
+{% endblock %}
